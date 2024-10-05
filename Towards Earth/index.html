@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <title>NASA Landsat 9 App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <header>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+        <header>
+            <input type="text" placeholder="Search place" id="search">
+        </header>
+        <model-viewer 
+        class="cl"
+        src="Earth_1_12756.glb"
+        auto-rotate
+        camera-controls
+        touch-action="pan-y"
+        style="height: 500px; width: 500px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 70px;"
+        >
+        </model-viewer>
+    </header>
+</body>
+</html>
