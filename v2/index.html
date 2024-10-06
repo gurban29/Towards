@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Landsat 9 App</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./libs/model-viewer/model-viewer.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <button class="search-button" id="search-button"><i class="fa fa-search"></i></button>
+        <button class="search-button" id="btn">srch</button>
+        <input type="text" placeholder="Поиск местоположения..." class="hidden" id="location-input">
+        <div id="suggestions" class="suggestions"></div>
+    </header>
+    <div class="model-container">
+        <model-viewer 
+            class="cl"
+            id="cl"
+            src="earth.glb"
+            auto-rotate
+            camera-controls
+            touch-action="pan-y"
+            style="width: 100vw; height: 100vh;">
+        </model-viewer>
+        <div id="container">
+            <div id="element1"></div>
+            <div id="element2"></div>
+        </div>
+    </div>
+
+    <div id="loader" class="loader" style="display:none;"></div>
+
+    <div id="results"></div>    
+    <script src="script.js" type="module"></script>
+    <script src="ai.js" type="module"></script>
+</body>
+</html>
